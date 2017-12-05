@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Dec-05-2017 at 19:13:33}
+{ Using PSTWRITER 16.6.0 d001Dec-05-2017 at 10:46:53}
 primitive 'BEEP_HC12085P_BEEP_12X7R6_BEEP';
   pin
     'P':
@@ -342,7 +342,7 @@ primitive 'L14G1/TO_0_SOT23_123_S8550_PNP';
     VALUE='S8550_PNP';
   end_body;
 end_primitive;
-primitive 'R_GENERIC_RC0603_0R/NI';
+primitive 'R_GENERIC_RC0603_0R';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -354,7 +354,7 @@ primitive 'R_GENERIC_RC0603_0R/NI';
   body
     PART_NAME='R_Generic';
     JEDEC_TYPE='RC0603';
-    VALUE='0R/NI';
+    VALUE='0R';
   end_body;
 end_primitive;
 primitive 'R_GENERIC_RC2512_0R1';
@@ -462,21 +462,6 @@ primitive 'R_GENERIC_RC0603_1M';
     VALUE='1M';
   end_body;
 end_primitive;
-primitive 'R_GENERIC_RC0603_0R';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='R_Generic';
-    JEDEC_TYPE='RC0603';
-    VALUE='0R';
-  end_body;
-end_primitive;
 primitive 'R_GENERIC_RC0603_26.1K';
   pin
     '1':
@@ -505,6 +490,21 @@ primitive 'R_GENERIC_RC0603_9.53K';
     PART_NAME='R_Generic';
     JEDEC_TYPE='RC0603';
     VALUE='9.53K';
+  end_body;
+end_primitive;
+primitive 'R_GENERIC_RC0603_0R/NI';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R_Generic';
+    JEDEC_TYPE='RC0603';
+    VALUE='0R/NI';
   end_body;
 end_primitive;
 primitive 'R_GENERIC_RC0603_4.7K';
@@ -550,27 +550,6 @@ primitive 'R_GENERIC_RC0603_2K';
     PART_NAME='R_Generic';
     JEDEC_TYPE='RC0603';
     VALUE='2K';
-  end_body;
-end_primitive;
-primitive 'SWITCH-SPST-4P_SW-6X6X6-L_SWITC';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='SWITCH-SPST-4P';
-    JEDEC_TYPE='SW-6X6x6-L';
-    VALUE='SWITCH';
   end_body;
 end_primitive;
 primitive 'SWITCH-SPST-4P_SW-B3F-4055_KEY';

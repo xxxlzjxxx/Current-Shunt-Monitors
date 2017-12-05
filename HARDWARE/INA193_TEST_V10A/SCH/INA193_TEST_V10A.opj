@@ -126,14 +126,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 432"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 432"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1451 52 536")
-        (Scroll "0 1695")
-        (Zoom "232")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1451 52 536")
+        (Scroll "2459 1848")
+        (Zoom "236")
         (Occurrence "/"))
       (Path
          "H:\GITHUB\CURRENT-SHUNT-MONITORS\HARDWARE\INA193_TEST_V10A\SCH\INA193_TEST_V10A.DSN")
