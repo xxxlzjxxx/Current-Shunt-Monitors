@@ -1,5 +1,5 @@
 #include "touch.h" 
-#include "lcd.h"
+#include "tftlcd.h"
 #include "delay.h"
 #include "stdlib.h"
 #include "math.h"

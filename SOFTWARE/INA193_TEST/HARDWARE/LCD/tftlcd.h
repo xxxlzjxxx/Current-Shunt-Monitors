@@ -1,5 +1,5 @@
-#ifndef __LCD_H
-#define __LCD_H		
+#ifndef __TFTLCD_H
+#define __TFTLCD_H		
 #include "sys.h"	 
 #include "stdlib.h"
 //////////////////////////////////////////////////////////////////////////////////	 
@@ -170,7 +170,7 @@ extern u16  BACK_COLOR; //背景颜色.默认为白色
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
 	    															  
-void LCD_Init(void);													   	//初始化
+void TFTLCD_Init(void);													   	//初始化
 void LCD_DisplayOn(void);													//开显示
 void LCD_DisplayOff(void);													//关显示
 void LCD_Clear(u16 Color);	 												//清屏

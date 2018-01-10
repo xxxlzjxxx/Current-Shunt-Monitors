@@ -1,4 +1,4 @@
-#include "lcd.h"
+#include "tftlcd.h"
 #include "stdlib.h"
 #include "font.h" 
 #include "usart.h"
@@ -655,7 +655,7 @@ void LCD_Set_Window(u16 sx,u16 sy,u16 width,u16 height)
 //初始化lcd
 //该初始化函数可以初始化各种ALIENTEK出品的LCD液晶屏
 //本函数占用较大flash,用户可以根据自己的实际情况,删掉未用到的LCD初始化代码.以节省空间.
-void LCD_Init(void)
+void TFTLCD_Init(void)
 { 
  	GPIO_InitTypeDef GPIO_InitStructure;
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC|RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE); //使能PORTB,C时钟和AFIO时钟
@@ -673,7 +673,7 @@ void LCD_Init(void)
  
 	GPIO_SetBits(GPIOB,GPIO_Pin_All);
 
-delay_ms(50); // delay 50 ms 
+	delay_ms(50); // delay 50 ms 
 	LCD_WriteReg(0x0000,0x0001);
 	delay_ms(50); // delay 50 ms 
   	lcddev.id = LCD_ReadReg(0x0000);   
