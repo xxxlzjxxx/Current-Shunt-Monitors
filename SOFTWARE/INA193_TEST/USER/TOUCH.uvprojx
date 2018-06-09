@@ -13,16 +13,16 @@
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F103RF</Device>
+          <Device>STM32F103RE</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F1xx_DFP.2.2.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IRAM(0x20000000,0x18000) IROM(0x08000000,0xC0000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IRAM(0x20000000,0x10000) IROM(0x08000000,0x80000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F103RF$Flash\STM32F10x_1024.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000 -FP0($$Device:STM32F103RE$Flash\STM32F10x_512.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:STM32F103RF$Device\Include\stm32f10x.h</RegisterFile>
+          <RegisterFile>$$Device:STM32F103RE$Device\Include\stm32f10x.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,7 +32,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F103RF$SVD\STM32F103xx.svd</SFDFile>
+          <SFDFile>$$Device:STM32F103RE$SVD\STM32F103xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -109,11 +109,11 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments> -REMAP -MPU</SimDllArguments>
+          <SimDllArguments> -REMAP</SimDllArguments>
           <SimDlgDll>DCM.DLL</SimDlgDll>
           <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
-          <TargetDllArguments> -MPU</TargetDllArguments>
+          <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TCM.DLL</TargetDlgDll>
           <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
         </DllOption>
@@ -243,12 +243,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x18000</Size>
+                <Size>0x10000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0xc0000</Size>
+                <Size>0x80000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -273,7 +273,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0xc0000</Size>
+                <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -298,7 +298,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x18000</Size>
+                <Size>0x10000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -310,7 +310,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>3</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -333,9 +333,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F10X_XL,USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\HARDWARE\TOUCH;..\HARDWARE\ADC;..\MALLOC;..\USMART;..\EMWIN\Config;..\EMWIN\inc;..\HARDWARE\FLASH;..\HARDWARE\SPI;..\HARDWARE\SRAM;..\HARDWARE\TIMER;..\EMWIN\Demo</IncludePath>
+              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\HARDWARE\TOUCH;..\HARDWARE\ADC;..\MALLOC;..\USMART;..\HARDWARE\FLASH;..\HARDWARE\SPI;..\HARDWARE\SRAM;..\HARDWARE\TIMER;..\UCOSIII\uC-CPU;..\UCOSIII\uC-LIB;..\UCOSIII\uCOS-III;..\UCOSIII\UCOS_BSP;..\UCOSIII\uCOS_CONFIG;..\UCOSIII\uCOS-III\Source;..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView;..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView;..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -607,182 +607,222 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>EMWIN_Config</GroupName>
+          <GroupName>UCOSIII-BSP</GroupName>
           <Files>
             <File>
-              <FileName>GUIConf.c</FileName>
+              <FileName>bsp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\EMWIN\Config\GUIConf.c</FilePath>
+              <FilePath>..\UCOSIII\UCOS_BSP\bsp.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>UCOSIII-CPU</GroupName>
+          <Files>
+            <File>
+              <FileName>cpu_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu_a.asm</FilePath>
             </File>
             <File>
-              <FileName>GUIConf.h</FileName>
+              <FileName>cpu_c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu_c.c</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-CPU\cpu_core.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>UCOSIII-LIB</GroupName>
+          <Files>
+            <File>
+              <FileName>lib_ascii.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-LIB\lib_ascii.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_math.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-LIB\lib_math.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-LIB\lib_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_str.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uC-LIB\lib_str.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_mem_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>UCOSIII-CORE</GroupName>
+          <Files>
+            <File>
+              <FileName>os_cfg_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_cfg_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_dbg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_dbg.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_flag.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_flag.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_msg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_msg.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_mutex.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_pend_multi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_pend_multi.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_prio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_prio.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_q.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_q.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_sem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_sem.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_stat.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_stat.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_tmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_tmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_var.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Source\os_var.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>UCOSIII-PORT</GroupName>
+          <Files>
+            <File>
+              <FileName>os_cpu.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\EMWIN\Config\GUIConf.h</FilePath>
+              <FilePath>..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDRV_Template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Config\GUIDRV_Template.c</FilePath>
+              <FileName>os_cpu_a.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s</FilePath>
             </File>
             <File>
-              <FileName>LCDConf_FlexColor_Template.c</FileName>
+              <FileName>os_cpu_c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\EMWIN\Config\LCDConf_FlexColor_Template.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUI_X.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\OS\GUI_X.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUI_X_Touch_Analog.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Config\GUI_X_Touch_Analog.c</FilePath>
+              <FilePath>..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_c.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>EMWIN_Lib</GroupName>
+          <GroupName>UCOSIII-CONFIG</GroupName>
           <Files>
             <File>
-              <FileName>STemWin532_CM3_Keil.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\EMWIN\Lib\STemWin532_CM3_Keil.lib</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>EMWIN_Demo</GroupName>
-          <Files>
-            <File>
-              <FileName>GUIDEMO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO.c</FilePath>
+              <FileName>app_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\app_cfg.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_AntialiasedText.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_AntialiasedText.c</FilePath>
+              <FileName>cpu_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\cpu_cfg.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_Automotive.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Automotive.c</FilePath>
+              <FileName>includes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\includes.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_BarGraph.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_BarGraph.c</FilePath>
+              <FileName>lib_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\lib_cfg.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_Bitmap.c</FileName>
+              <FileName>os_app_hooks.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Bitmap.c</FilePath>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\os_app_hooks.c</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_ColorBar.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_ColorBar.c</FilePath>
+              <FileName>os_app_hooks.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\os_app_hooks.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_Conf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Conf.c</FilePath>
+              <FileName>os_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\os_cfg.h</FilePath>
             </File>
             <File>
-              <FileName>GUIDEMO_Cursor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Cursor.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Fading.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Fading.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Graph.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Graph.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_IconView.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_IconView.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_ImageFlow.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_ImageFlow.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Intro.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Intro.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Listview.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Listview.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_RadialMenu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_RadialMenu.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Resource.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Resource.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Skinning.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Skinning.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Speed.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Speed.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Speedometer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Speedometer.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Start.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Start.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Touch.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Touch.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_TransparentDialog.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_TransparentDialog.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_Treeview.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_Treeview.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_VScreen.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_VScreen.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_WashingMachine.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_WashingMachine.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDEMO_ZoomAndRotate.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\EMWIN\Demo\GUIDEMO_ZoomAndRotate.c</FilePath>
+              <FileName>os_cfg_app.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSIII\uCOS_CONFIG\os_cfg_app.h</FilePath>
             </File>
           </Files>
         </Group>
