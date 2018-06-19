@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-09-2018 at 17:26:52}
+{ Using PSTWRITER 17.2.0 d001Jun-11-2018 at 16:41:36}
 primitive 'BATTERY_XHB-2A_BATTERY';
   pin
     '1':
@@ -195,7 +195,7 @@ primitive 'FUSE_SMD-1210_SMD1210-6V2A';
     VALUE='SMD1210-6V2A';
   end_body;
 end_primitive;
-primitive 'CONN RCPT 4_HEADER4X1_2R54_HEAD';
+primitive 'CONN RCPT 6_HEADER6X1_2R54_HEAD';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -209,11 +209,17 @@ primitive 'CONN RCPT 4_HEADER4X1_2R54_HEAD';
     '4':
       PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
+    '5':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    '6':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CONN RCPT 4';
-    JEDEC_TYPE='HEADER4X1_2R54';
-    VALUE='HEADER4X1_2R54';
+    PART_NAME='CONN RCPT 6';
+    JEDEC_TYPE='HEADER6X1_2R54';
+    VALUE='HEADER6X1_2R54';
   end_body;
 end_primitive;
 primitive 'IND_BEAD_0805_600OHM_1_L3015_SW';
@@ -294,21 +300,6 @@ primitive 'R_GENERIC_RC0603_1.5K';
     VALUE='1.5K';
   end_body;
 end_primitive;
-primitive 'R_GENERIC_RC0603_100K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='R_Generic';
-    JEDEC_TYPE='RC0603';
-    VALUE='100K';
-  end_body;
-end_primitive;
 primitive 'R_GENERIC_RC0603_22R';
   pin
     '1':
@@ -367,6 +358,21 @@ primitive 'R_GENERIC_RC0603_2K';
     PART_NAME='R_Generic';
     JEDEC_TYPE='RC0603';
     VALUE='2K';
+  end_body;
+end_primitive;
+primitive 'R_GENERIC_RC0603_100K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R_Generic';
+    JEDEC_TYPE='RC0603';
+    VALUE='100K';
   end_body;
 end_primitive;
 primitive 'R_GENERIC_RC0603_44.2K';
@@ -745,33 +751,6 @@ primitive 'SHT30-DIS-B_DFN-8_SHT30-DIS-B';
     PART_NAME='SHT30-DIS-B';
     JEDEC_TYPE='DFN-8';
     VALUE='SHT30-DIS-B';
-  end_body;
-end_primitive;
-primitive 'NUP2202W1_D_2_SOT-363_NUP4202W1';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-    '5':
-      PIN_NUMBER='(5)';
-      PINUSE='UNSPEC';
-    '6':
-      PIN_NUMBER='(6)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='nup2202w1_D_2';
-    JEDEC_TYPE='SOT-363';
-    VALUE='NUP4202W1T2G';
   end_body;
 end_primitive;
 primitive 'BQ24090_HVSSOP-10_BQ24090DGQR';

@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.2.0 d001Jun-09-2018 at 17:26:52 }
+{ Using PSTWRITER 17.2.0 d001Jun-11-2018 at 16:41:36 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='L151_SHT30_V10A';
@@ -208,16 +208,6 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
- C8 'CAP NP_2_CC0603_0.1UF_50V':;
-
-SECTION_NUMBER 1
- '@L151_SHT30_V10A.MAIN(SCH_1):INS16896967@MK60_YTAI_V41B.CAP NP_2.NORMAL(CHIPS)':
- C_PATH='@l151_sht30_v10a.main(sch_1):ins16896967@mk60_ytai_v41b.\cap np_2.normal\(chips)',
- P_PATH='@l151_sht30_v10a.main(sch_1):page3_ins16896967@mk60_ytai_v41b.\cap np_2.normal\(chips)',
- PRIM_FILE='.\pstchip.dat',
- SECTION='';
-
-PART_NAME
  C9 'CAP NP_2_CC0603_0.1UF_50V':;
 
 SECTION_NUMBER 1
@@ -298,12 +288,12 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
- J1 'CONN RCPT 4_HEADER4X1_2R54_HEAD':;
+ J2 'CONN RCPT 6_HEADER6X1_2R54_HEAD':;
 
 SECTION_NUMBER 1
- '@L151_SHT30_V10A.MAIN(SCH_1):INS16897872@CONNECTOR.CONN RCPT 4.NORMAL(CHIPS)':
- C_PATH='@l151_sht30_v10a.main(sch_1):ins16897872@connector.\conn rcpt 4.normal\(chips)',
- P_PATH='@l151_sht30_v10a.main(sch_1):page3_ins16897872@connector.\conn rcpt 4.normal\(chips)',
+ '@L151_SHT30_V10A.MAIN(SCH_1):INS16913354@CONNECTOR.CONN RCPT 6.NORMAL(CHIPS)':
+ C_PATH='@l151_sht30_v10a.main(sch_1):ins16913354@connector.\conn rcpt 6.normal\(chips)',
+ P_PATH='@l151_sht30_v10a.main(sch_1):page3_ins16913354@connector.\conn rcpt 6.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -364,16 +354,6 @@ SECTION_NUMBER 1
  '@L151_SHT30_V10A.MAIN(SCH_1):INS16907321@EMULATION MODULE.R_GENERIC.NORMAL(CHIPS)':
  C_PATH='@l151_sht30_v10a.main(sch_1):ins16907321@\emulation module\.\r_generic.normal\(chips)',
  P_PATH='@l151_sht30_v10a.main(sch_1):page5_ins16907321@\emulation module\.\r_generic.normal\(chips)',
- PRIM_FILE='.\pstchip.dat',
- SECTION='';
-
-PART_NAME
- R13 'R_GENERIC_RC0603_100K':;
-
-SECTION_NUMBER 1
- '@L151_SHT30_V10A.MAIN(SCH_1):INS16907329@EMULATION MODULE.R_GENERIC.NORMAL(CHIPS)':
- C_PATH='@l151_sht30_v10a.main(sch_1):ins16907329@\emulation module\.\r_generic.normal\(chips)',
- P_PATH='@l151_sht30_v10a.main(sch_1):page5_ins16907329@\emulation module\.\r_generic.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -654,16 +634,6 @@ SECTION_NUMBER 1
  '@L151_SHT30_V10A.MAIN(SCH_1):INS16910210@IC.SHT30-DIS-B.NORMAL(CHIPS)':
  C_PATH='@l151_sht30_v10a.main(sch_1):ins16910210@ic.\sht30-dis-b.normal\(chips)',
  P_PATH='@l151_sht30_v10a.main(sch_1):page4_ins16910210@ic.\sht30-dis-b.normal\(chips)',
- PRIM_FILE='.\pstchip.dat',
- SECTION='';
-
-PART_NAME
- U5 'NUP2202W1_D_2_SOT-363_NUP4202W1':;
-
-SECTION_NUMBER 1
- '@L151_SHT30_V10A.MAIN(SCH_1):INS16907378@MK60_YTAI_V41B.NUP2202W1_D_2.NORMAL(CHIPS)':
- C_PATH='@l151_sht30_v10a.main(sch_1):ins16907378@mk60_ytai_v41b.\nup2202w1_d_2.normal\(chips)',
- P_PATH='@l151_sht30_v10a.main(sch_1):page5_ins16907378@mk60_ytai_v41b.\nup2202w1_d_2.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

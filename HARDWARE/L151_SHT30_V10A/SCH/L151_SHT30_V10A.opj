@@ -121,6 +121,10 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    ("CONN RCPT 6"
+      (FullPartName "CONN RCPT 6.Normal")
+      (LibraryName "D:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
     (SHT30-DIS-B
       (FullPartName "SHT30-DIS-B.Normal")
       (LibraryName "E:\CADENCELIB\ORCAD\IC.OLB")
@@ -132,10 +136,6 @@
     (88E6071-xx-NNC2I000
       (FullPartName "88E6071-xx-NNC2I000.Normal")
       (LibraryName "E:\CADENCELIB\ORCAD\IC.OLB")
-      (DeviceIndex "0"))
-    ("CONN RCPT 6"
-      (FullPartName "CONN RCPT 6.Normal")
-      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
       (DeviceIndex "0"))
     ("CONN RCPT 8"
       (FullPartName "CONN RCPT 8.Normal")
@@ -235,9 +235,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1769 182 801")
-        (Scroll "0 322")
-        (Zoom "148")
+        (Placement "44 0 1 -1 -1 -8 -31 156 1501 156 664")
+        (Scroll "186 1482")
+        (Zoom "296")
         (Occurrence "/"))
       (Path
          "H:\CURRENT-SHUNT-MONITORS\HARDWARE\L151_SHT30_V10A\SCH\L151_SHT30_V10A.DSN")
@@ -246,25 +246,25 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 234 1821 234 853")
-        (Scroll "1027 462")
-        (Zoom "296")
+        (Placement "44 0 1 -1 -1 -8 -31 260 1847 260 879")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "H:\CURRENT-SHUNT-MONITORS\HARDWARE\L151_SHT30_V10A\SCH\L151_SHT30_V10A.DSN")
       (Schematic "MAIN")
-      (Page "05 POWER"))
+      (Page "04 SENSOR"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1639 52 671")
-        (Scroll "799 166")
-        (Zoom "296")
+        (Placement "44 0 1 -1 -1 -8 -31 286 1873 286 905")
+        (Scroll "2889 3138")
+        (Zoom "592")
         (Occurrence "/"))
       (Path
          "H:\CURRENT-SHUNT-MONITORS\HARDWARE\L151_SHT30_V10A\SCH\L151_SHT30_V10A.DSN")
       (Schematic "MAIN")
-      (Page "04 SENSOR")))
+      (Page "05 POWER")))
   (LastUsedLibraryBrowseDirectory "E:\CadenceLib\orcad")
   (MPSSessionName "Administrator")
   (ISPCBBASICLICENSE "false"))
