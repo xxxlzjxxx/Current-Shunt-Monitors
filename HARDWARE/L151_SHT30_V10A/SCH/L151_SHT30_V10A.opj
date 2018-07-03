@@ -217,15 +217,9 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "H:\Current-Shunt-Monitors\HARDWARE\L151_SHT30_V10A\SCH\l151_sht30_v10a.dsn")
-      (Path "Design Resources"
-         "H:\Current-Shunt-Monitors\HARDWARE\L151_SHT30_V10A\SCH\l151_sht30_v10a.dsn"
-         "MAIN")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources"
-         "H:\Current-Shunt-Monitors\HARDWARE\L151_SHT30_V10A\SCH\l151_sht30_v10a.dsn"))
+      (Select "Design Resources" ".\l151_sht30_v10a.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
