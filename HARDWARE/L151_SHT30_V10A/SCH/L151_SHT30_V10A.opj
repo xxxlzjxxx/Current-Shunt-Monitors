@@ -217,9 +217,11 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources" ".\l151_sht30_v10a.dsn")
+      (Path "Design Resources" ".\l151_sht30_v10a.dsn" "MAIN")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources" ".\l151_sht30_v10a.dsn"))
+      (Select "Design Resources" ".\l151_sht30_v10a.dsn" "MAIN" "04 SENSOR"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -241,8 +243,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 260 1847 260 879")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Scroll "185 0")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "H:\CURRENT-SHUNT-MONITORS\HARDWARE\L151_SHT30_V10A\SCH\L151_SHT30_V10A.DSN")
