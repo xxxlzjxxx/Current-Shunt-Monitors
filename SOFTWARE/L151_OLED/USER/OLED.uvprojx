@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\OLED;..\SYSTEM\usart</IncludePath>
+              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\OLED;..\SYSTEM\usart;..\HARDWARE\IIC;..\HARDWARE\SHT30</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -408,6 +408,16 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\OLED\oled.c</FilePath>
+            </File>
+            <File>
+              <FileName>myiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\IIC\myiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>TemAndHum.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\SHT30\TemAndHum.c</FilePath>
             </File>
           </Files>
         </Group>
