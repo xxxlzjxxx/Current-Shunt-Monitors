@@ -117,17 +117,33 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\ina193_test_v10a.dsn")
-      (Path "Design Resources" ".\ina193_test_v10a.dsn" "SCH")
+      (Path "Design Resources"
+         "H:\github\Current-Shunt-Monitors\HARDWARE\INA193_TEST_V10A\SCH\ina193_test_v10a.dsn")
+      (Path "Design Resources"
+         "H:\github\Current-Shunt-Monitors\HARDWARE\INA193_TEST_V10A\SCH\ina193_test_v10a.dsn"
+         "SCH")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources" ".\ina193_test_v10a.dsn" "SCH" "02 MCU"))
+      (Select "Design Resources"
+         "H:\github\Current-Shunt-Monitors\HARDWARE\INA193_TEST_V10A\SCH\ina193_test_v10a.dsn"
+         "SCH" "02 MCU"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 0 200 0 432"))
-      (Tab 0)))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1434 104 723")
+        (Scroll "0 2173")
+        (Zoom "296")
+        (Occurrence "/"))
+      (Path
+         "H:\GITHUB\CURRENT-SHUNT-MONITORS\HARDWARE\INA193_TEST_V10A\SCH\INA193_TEST_V10A.DSN")
+      (Schematic "SCH")
+      (Page "02 MCU")))
   (PartMRUSelector
     (INA214AIDCKR
       (FullPartName "INA214AIDCKR.Normal")
